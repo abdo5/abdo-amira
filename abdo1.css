@@ -1,0 +1,48 @@
+body{
+    perspective: 700px;
+    background-color:aquamarine;
+}
+
+
+section, .front, .back{
+    width:200px;
+    height:300px;
+    
+}
+section{
+    position:relative;
+    margin: 30px auto;
+    transition:1s;
+    transform-style: preserve-3d;
+}
+
+.back,.front{
+    position:absolute;
+}
+
+.front{
+    background-color:red;
+    z-index:1;
+    backface-visibility:hidden;
+
+}
+
+.back{
+    background-color:green;
+    transform: rotateY(180deg);
+
+}
+
+.div1{
+    background-image: url("abdo1.jpg");
+    background-size:cover;
+}
+
+.div2{
+    background-image: url(amira1.jpg);
+    background-size: cover;
+}
+section:hover{
+    transform:rotateY(180deg);
+   
+}
